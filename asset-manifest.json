@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "https://rishitreddy.com/static/css/main.cfec3494.css",
+    "main.js": "https://rishitreddy.com/static/js/main.6b53bd39.js",
+    "index.html": "https://rishitreddy.com/index.html",
+    "main.cfec3494.css.map": "https://rishitreddy.com/static/css/main.cfec3494.css.map",
+    "main.6b53bd39.js.map": "https://rishitreddy.com/static/js/main.6b53bd39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfec3494.css",
+    "static/js/main.6b53bd39.js"
+  ]
+}
