@@ -3,8 +3,8 @@ import HeaderSection from './sections/Header';
 
 function App() {
   return (
-    <div className="">
-      <header className="">
+    <div style={{ overflow: 'hidden' }}>
+      <header>
         <HeaderSection />
       </header>
     </div>

@@ -9,6 +9,7 @@ import {
   Text,
   Image,
   Icon,
+  Button,
 } from '@chakra-ui/react';
 import { ReactTyped as Typed } from 'react-typed';
 import { motion } from 'framer-motion';
@@ -18,6 +19,33 @@ const MotionHeading = motion(Heading);
 const MotionImageBox = motion(Box);
 const MotionIcon = motion(Icon);
 
+// Navigation component with a Download Resume button
+function Navigation() {
+  return (
+    <Flex
+      as="nav"
+      align="center"
+      justify="flex-end"
+      px={{ base: 4, md: 6, lg: 28 }}
+      py={4}
+      position="absolute"
+      top={0}
+      width="100%"
+      zIndex="100"
+    >
+      <Button
+        as="a"
+        href="/resume.pdf"
+        download
+        colorScheme="blue"
+        variant="outline"
+      >
+        Download Resume
+      </Button>
+    </Flex>
+  );
+}
+
 export default function HeaderSection() {
   const bgColor = 'blue.800';
   const blobColor = 'blue.600';
@@ -26,6 +54,7 @@ export default function HeaderSection() {
     <MotionBox
       bgGradient="linear(to-r, gray.900, gray.800)"
       minH="100vh"
+      minW="100vw"
       display="flex"
       alignItems="center"
       justifyContent="center"
@@ -33,14 +62,18 @@ export default function HeaderSection() {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: 'easeOut' }}
+      overflow="hidden"
+      position="relative"
     >
-      <Container maxW="7xl">
+      <Navigation />
+      <Container maxW="7xl" px={{ base: 4, md: 6, lg: 8 }}>
         <Stack
           align="center"
-          spacing={{ base: 16, md: 24 }}
-          py={{ base: 20, md: 28 }}
+          spacing={{ base: 16, md: 12, lg: 24 }}
+          py={{ base: 20, md: 24, lg: 28 }}
           direction={{ base: 'column', md: 'row' }}
           textAlign="left"
+          w="full"
         >
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
             <MotionHeading
@@ -138,5 +171,3 @@ const Blob = (props) => {
     </MotionIcon>
   );
 };
-
-

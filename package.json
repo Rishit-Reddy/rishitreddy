@@ -1,7 +1,7 @@
 {
   "name": "rishitreddy",
   "version": "0.1.0",
-  "homepage": "https://rishitreddy.me/rishitreddy/",
+  "homepage": "https://rishitreddy.com",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^3.0.2",
