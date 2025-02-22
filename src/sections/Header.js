@@ -37,7 +37,6 @@ function Navigation() {
         as="a"
         href="/resume.pdf"
         download
-        colorScheme="blue"
         variant="outline"
       >
         Download Resume
